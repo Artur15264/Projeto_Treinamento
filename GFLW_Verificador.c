@@ -14,7 +14,7 @@ int main() {
     printf("Digite as placas no formato (ABC1234 ou ABC1D23). Digite 'FIM' para encerrar:\n");
 
     // Coleta e armazena as placas
-    coletarPlacas(placas, resultados, modelo, &numPlacas);
+    //coletarPlacas(placas, resultados, modelo, &numPlacas);
 
     // Exibe os resultados
     printf("\n\nResultados:\n\n");
