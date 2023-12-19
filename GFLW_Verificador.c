@@ -9,7 +9,7 @@ int main() {
     char placas[MAX_PLACAS][8]; // Matriz para armazenar as placas
     int resultados[MAX_PLACAS]; // Vetor para armazenar os resultados
     int modelo[MAX_PLACAS];
-    int numPlacas = 0; // Contador de placas inseridas
+    int numPlacas = 0;
     
     printf("Digite as placas no formato (ABC1234 ou ABC1D23). Digite 'FIM' para encerrar:\n");
 

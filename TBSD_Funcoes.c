@@ -14,7 +14,7 @@ int numPlacas = 0;
 int verificarFormato(char input[]) {
     for (int i = 0; i < 3; ++i) {
         if (!isalpha(input[i])) {
-            return 0; // Define como falso se pelo menos um caractere não for letra
+            return 0; 
         }
     }
     for (int i = 5; i < 7; ++i) {
@@ -36,12 +36,12 @@ int determinarModelo(char input[]) {
     if (!isdigit(input[4])) {
         return 1; // Modelo Novo (Mercosul)
     }
-    return 0; // Caso padrão (Modelo Antigo)
+    return 0; 
 }
 
 // Função para coletar as placas
 void coletarPlacas(char placas[][8], int resultados[], int modelo[], int *numPlacas) {
-    // Loop para receber as placas até atingir o máximo ou o usuário inserir "FIM"
+    
     while (*numPlacas < MAX_PLACAS) {
         char input[8];
         printf("Placa %d: ", *numPlacas + 1);
@@ -56,11 +56,11 @@ void coletarPlacas(char placas[][8], int resultados[], int modelo[], int *numPla
 
         if (formatoValido) {
             strcpy(placas[*numPlacas], input);
-            resultados[*numPlacas] = 1; // Assume verdadeiro por padrão
+            resultados[*numPlacas] = 1; 
         } else {
             printf("Formato inválido! Por favor, digite uma placa no formato ABC1234 ou ABC1D23.\n");
             strcpy(placas[*numPlacas], input);
-            resultados[*numPlacas] = 0; // Define como falso se o formato for inválido
+            resultados[*numPlacas] = 0; 
         }
 
         // Determina o modelo da placa
